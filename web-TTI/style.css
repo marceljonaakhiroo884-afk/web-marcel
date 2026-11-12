@@ -1,0 +1,600 @@
+/* Pengaturan Variabel Warna (Light Cyan Base) */
+:root {
+  --bg-utama: #4b8d8d;
+  --bg-kartu: #1E293B;
+  --warna-utama: #47d0e2cc;
+  --warna-aksen: #E2856E;
+  --teks-utama: #edf1f1;
+  --teks-sekunder: #fcfdfd;
+}
+
+/* Reset Dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(bgwebgw.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navigasi */
+nav {
+  background-color: var(--bg-kartu);
+  padding: 16px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(29, 91, 100, 0.08);
+  z-index: 100;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: whitesmoke;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--teks-utama);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--warna-aksen);
+}
+
+/* Kontainer Utama */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Bagian Hero / Profil Utama */
+.hero {
+  background-color: var(--bg-kartu);
+  padding: 40px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 15px rgba(29, 91, 100, 0.06);
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--bg-utama);
+  background-color: #BCEBEB;
+}
+
+.hero-info h1 {
+  color: var(--warna-utama);
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.hero-info .peran {
+  color: rgb(231, 231, 231);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+}
+
+.hero-info p {
+  color: var(--teks-sekunder);
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Grid 2 Kolom (Latar Belakang, Keahlian, Target, Cita-cita) */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.kartu {
+  background-color: var(--bg-kartu);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(29, 91, 100, 0.05);
+}
+
+.kartu h2 {
+  color: rgb(98, 192, 164);
+  font-size: 1.3rem;
+  margin-bottom: 14px;
+  border-bottom: 2px solid var(--bg-utama);
+  padding-bottom: 8px;
+}
+
+.kartu p, .kartu li {
+  color: var(--teks-sekunder);
+  font-size: 0.95rem;
+}
+
+.kartu ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.kartu ul li {
+  margin-bottom: 8px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.kartu ul li::before {
+  content: "•";
+  color: var(--warna-aksen);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Lencana Keahlian */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.badge {
+  background-color: var(--bg-utama);
+  color:whitesmoke;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Judul Bagian */
+.section-title {
+  color: var(--warna-utama);
+  font-size: 1.5rem;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+/* Grid 3 Kolom (Konten & Produk) */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.produk-kartu {
+  background-color: var(--bg-kartu);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(200, 212, 214, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 5cm;
+}
+
+
+.produk-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: list-item;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.produk-body h3 {
+  color:blanchedalmond;
+  font-size: 1.15rem;
+  margin-bottom: 0px;
+  background: linear-gradient(
+
+        90deg,
+
+        #00BFFF,
+
+        #FFFFFF,
+
+        #00E5FF,
+
+        #FFFFFF,
+
+        #00BFFF
+
+    );
+
+
+
+    background-size: 200% auto;
+
+    color: transparent;
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+
+
+    animation: shimmer 3s linear infinite;
+
+    font-weight: bold;
+
+}
+
+
+
+@keyframes shimmer {
+
+    0% {
+
+        background-position: 200% center;
+
+    }
+
+
+
+    100% {
+
+        background-position: -200% center;
+
+    }
+
+}
+
+
+
+.produk-body p {
+  color: var(--teks-sekunder);
+  font-size: 0.9rem;
+}
+
+/* Tombol */
+.btn {
+  display: inline-block;
+  background-color: var(--warna-utama);
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #14434A;
+}
+
+.btn-aksen {
+  background-color: var(--warna-aksen);
+}
+
+.btn-aksen:hover {
+  background-color: #C96E58;
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* Kotak Kontak */
+.kontak-box {
+  background-color: var(--warna-utama);
+  color: #FFFFFF;
+  padding: 40px 24px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.kontak-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.kontak-box p {
+  color: #D0ECEE;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.kontak-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.kontak-links a {
+  background-color: var(--bg-kartu);
+  color: var(--warna-utama);
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.kontak-links a:hover {
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--teks-sekunder);
+  font-size: 0.85rem;
+}
+
+.tombol-kembali{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0aa76a;
+  box-shadow: 0 4px 6px white ;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-display: block;
+}
+
+/* EFEK TOMBOL LIHAT DETAIL */
+
+.btn {
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+
+}
+
+
+
+/* Saat kursor diarahkan ke tombol */
+
+.btn:hover {
+
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+
+    color: white;
+
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow: 0 0 10px #00c6ff,
+
+                0 0 25px rgba(0, 198, 255, 0.5);
+
+}
+
+/* =================================
+
+   ALWAYS ON NEON AURA
+
+================================= */
+
+
+
+.produk-kartu {
+
+    position: relative;
+
+    isolation: isolate;
+
+    border: 1px solid rgba(0, 210, 255, 0.6);
+
+    border-radius: 20px;
+
+
+
+    animation: boxGlow 3s ease-in-out infinite alternate;
+
+
+
+    transition: transform 0.4s ease;
+
+}
+
+
+
+/* CAHAYA DI SEKITAR BOX */
+
+.produk-kartu::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -3px;
+
+    border-radius: 22px;
+
+
+
+    background: linear-gradient(
+
+        120deg,
+
+        #00eaff,
+
+        #557fbd,
+
+        #a020f0,
+
+        #00ccff
+
+    );
+
+
+
+    background-size: 300% 300%;
+
+    filter: blur(13px);
+
+    opacity: 0.65;
+
+
+
+    z-index: -1;
+
+
+
+    animation: neonMove 5s linear infinite;
+
+}
+
+
+
+/* GARIS NEON */
+
+.produk-kartu::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(0, 225, 255, 0.5);
+
+
+
+    pointer-events: none;
+
+}
+
+
+
+/* ANIMASI CAHAYA BERGERAK */
+
+@keyframes neonMove {
+
+    0% {
+
+        background-position: 0% 50%;
+
+    }
+
+
+
+    50% {
+
+        background-position: 100% 50%;
+
+    }
+
+
+
+    100% {
+
+        background-position: 0% 50%;
+
+    }
+
+}
+
+
+
+/* CAHAYA BERDENYUT */
+
+@keyframes boxGlow {
+
+    from {
+
+        box-shadow:
+
+            0 0 8px rgba(0, 200, 255, 0.25);
+
+    }
+
+
+
+    to {
+
+        box-shadow:
+
+            0 0 22px rgba(0, 200, 255, 0.55),
+
+            0 0 35px rgba(120, 0, 255, 0.2);
+
+    }
+
+}
+
+
+
+/* EFEK SAAT KURSOR DIARAHKAN */
+
+.produk-kartu:hover {
+
+    transform: translateY(-8px) scale(1.02);
+
+}
+
+/* Saat tombol ditekan */
+
+.btn:active {
+
+    transform: scale(0.96);
+
+    box-shadow: 0 0 8px #00c6ff;
+
+}
+
+
+
+/* Responsif untuk Layar HP */
+@media (max-width: 650px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
